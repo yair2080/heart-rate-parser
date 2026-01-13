@@ -1,0 +1,9 @@
+{
+  "name": "heart-rate-parser",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "node": "node --loader ts-node/esm src/index.ts"
+  }
+}
