@@ -1,19 +1,54 @@
 # Heart Rate Parser
 
-Extracts valid HeartRate values from a log string.
+This project extracts numeric HeartRate values from a log string while ignoring invalid entries.
 
 ## Example
 
-Input:
+**Input:**
+```
 LOG_01: HeartRate=72bpm; STATUS=OK | LOG_02: HeartRate= 85 ; STATUS=WARN | LOG_03: HeartRate=error; STATUS=FAIL
+```
 
-Output:
+**Output:**
+```
 [72, 85]
+```
 
-## Run
+## Installation
 
-- With Bun:  
-bun run src/index.ts
+Make sure you have **Node.js** or **Bun** installed.
 
-- With Node:  
+### Using Node.js
+
+1. Install dependencies:
+```
+npm install
+```
+
+2. Run the script:
+```
 npm run node
+```
+
+### Using Bun
+
+1. Run the script directly:
+```
+bun run src/index.ts
+```
+
+## Project Structure
+
+```
+heart-rate-parser/
+├─ package.json
+├─ tsconfig.json
+├─ README.md
+└─ src/
+   ├─ extractHeartRate.ts
+   └─ index.ts
+```
+
+## Author
+
+Raphael
